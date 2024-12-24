@@ -17,7 +17,7 @@ root.render(
             <h1 className='loading'>Loading...</h1>
           </div>
         }>
-        <App/>
+        <App />
       </Suspense>
     </BrowserRouter>
   </React.StrictMode>
