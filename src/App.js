@@ -30,7 +30,7 @@ function App(){
           <Route path='/login' element={<Login/>}/>
           <Route path='/register' element={<Register/>}/>
           <Route path='/cart' element={<Cart/>}/>
-          <Route path='*' element={<div className='flex justify-center items-center'>
+          <Route path='*' element={<div className='flex justify-center items-center h-[100vh]'>
             <img src={PageNotFound} alt='error' className='h-[500px]'/></div>}/>
         </Routes>
       <Footer/>
