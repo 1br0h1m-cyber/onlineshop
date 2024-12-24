@@ -1,3 +1,7 @@
+#root {
+    background-color: rgb(7 89 133);
+}
+
 .home {
     height: 105vh;
     background-image: url('./assets/bg-image.png');
