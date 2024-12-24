@@ -1,0 +1,31 @@
+.home {
+    height: 105vh;
+    background-image: url('./assets/bg-image.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.loading {
+    color: white;
+    font-size: x-large;
+    font-weight: bold;
+}
+
+@media (max-width:1000px) and (min-width:768px) {
+    #footer {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    #footerDiv {
+        margin-left: 50px;
+        margin-right: 50px;
+    }
+}
+
+@media (max-width:1150px) {
+    #footer {
+        display: flex;
+        gap: 50px;
+    }
+}
