@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import products from '../../data/productData';
+import Allproducts from '../../data/productData';
 
 //
 import { Rating } from 'react-simple-star-rating';
@@ -19,18 +19,18 @@ const Card = () => {
 
         <div className="px-9 py-5 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
         
-        {products.length !== 0 ? products.map((value,index)=>(
+        {Allproducts.length !== 0 ? Allproducts.map((value,index)=>(
 
         <div class="w-full max-w-sm  bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
             <a href="!#">
-                <img class="p-5 rounded-lg" src={products[0].image} alt="product-image" />
+                <img class="p-5 rounded-lg" src={Allproducts[0].image} alt="product-image" />
             </a>
             <div class="px-5 pb-5">
                 <a href="!#">
                     <h5 class="text-xl font-semibold tracking-tight text-gray-900 dark:text-white">Apple Watch Series 7 GPS, Aluminium Case, Starlight Sport</h5>
                 </a>
                 <div class="flex items-center mt-2.5 mb-5">
-                    <div class="flex items-center space-x-1 rtl:space-x-reverse">
+                    <div class="flex items-center space-x-1 rtl:space-x-reverse ">
                         <Rating initialValue={value.rating.rate} readonly={true} onClick={handleRating}/>
                     </div>
                     <span class="bg-blue-100 text-blue-800 text-xs font-semibold px-2.5 py-0.5 rounded dark:bg-blue-200 dark:text-blue-800 ms-3">{value.rating.rate}</span>
