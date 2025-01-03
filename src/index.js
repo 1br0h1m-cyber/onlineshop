@@ -12,7 +12,7 @@ root.render(
   <React.StrictMode>
     <BrowserRouter>
       <Suspense fallback={
-          <div className='flex flex-col justify-center items-center h-[95vh]'>
+          <div className='flex flex-col justify-center items-center h-[100vh]'>
             <PulseLoader color="white" size={40} margin={5} />
             <h1 className='loading'>Loading...</h1>
           </div>
