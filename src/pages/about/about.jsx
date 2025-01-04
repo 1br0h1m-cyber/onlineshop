@@ -1,4 +1,4 @@
-import React, { Suspense } from 'react';
+import React from 'react';
 
 // swipers css
 import 'swiper/css';
@@ -9,8 +9,6 @@ import 'swiper/css/navigation';
 import { Pagination, Navigation } from 'swiper/modules';
 import { Swiper, SwiperSlide } from 'swiper/react';
 
-//loader
-import { PulseLoader } from 'react-spinners';
 
 // images
 import swiper1 from '../../assets/swiper1.jpg';
@@ -24,25 +22,20 @@ const About = () => {
     <div className='lg:flex items-center justify-between px-8 gap-8'>
 
       <div className='w-90 lg:w-1/2 p-5'>
-        <Suspense fallback={<div className='flex flex-col justify-center items-center'>
-          <PulseLoader color="white" size={30} margin={5} />
-          <h1 className='loading'>Loading...</h1>
-        </div>}>
-          <Swiper
-            slidesPerView={1}
-            spaceBetween={30}
-            loop={true}
-            pagination={{ clickable: true }}
-            navigation={true}
-            modules={[Pagination, Navigation]}
-            className="mySwiper"
-          >
-            <SwiperSlide> <img src={swiper1} alt="Swiper 1" /> </SwiperSlide>
-            <SwiperSlide> <img src={swiper2} alt="Swiper 2" /> </SwiperSlide>
-            <SwiperSlide> <img src={swiper3} alt="Swiper 3" /> </SwiperSlide>
-            <SwiperSlide> <img src={swiper4} alt="Swiper 4" /> </SwiperSlide>
-          </Swiper>
-        </Suspense>
+        <Swiper
+          slidesPerView={1}
+          spaceBetween={30}
+          loop={true}
+          pagination={{ clickable: true }}
+          navigation={true}
+          modules={[Pagination, Navigation]}
+          className="mySwiper"
+        >
+          <SwiperSlide> <img src={swiper1} alt="Swiper 1" /> </SwiperSlide>
+          <SwiperSlide> <img src={swiper2} alt="Swiper 2" /> </SwiperSlide>
+          <SwiperSlide> <img src={swiper3} alt="Swiper 3" /> </SwiperSlide>
+          <SwiperSlide> <img src={swiper4} alt="Swiper 4" /> </SwiperSlide>
+        </Swiper>
       </div>
 
       <div className='w-90 lg:w-1/2 p-3'>

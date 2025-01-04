@@ -1,8 +1,9 @@
 import React, { useState } from 'react'
 import Allproducts from '../../data/productData';
 
-//
-import { Rating } from 'react-simple-star-rating';
+// rating
+import Rating from '@mui/material/Rating';
+import Stack from '@mui/material/Stack';
 
 const Card = () => {
     const [rating, setRating] = useState(0)
@@ -21,22 +22,25 @@ const Card = () => {
         
         {Allproducts.length !== 0 ? Allproducts.map((value,index)=>(
 
-        <div class="w-full max-w-sm  bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+        <div class="w-full max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
             <a href="!#">
                 <img class="p-5 rounded-lg" src={Allproducts[0].image} alt="product-image" />
             </a>
             <div class="px-5 pb-5">
                 <a href="!#">
-                    <h5 class="text-xl font-semibold tracking-tight text-gray-900 dark:text-white">Apple Watch Series 7 GPS, Aluminium Case, Starlight Sport</h5>
+                    <h5 class="text-xl font-semibold tracking-tight text-gray-900 dark:text-white">{value.title}</h5>
                 </a>
                 <div class="flex items-center mt-2.5 mb-5">
                     <div class="flex items-center space-x-1 rtl:space-x-reverse ">
-                        <Rating initialValue={value.rating.rate} readonly={true} onClick={handleRating}/>
+                        {/* <Rating initialValue={value.rating.rate} readonly={true} onClick={handleRating}/> */}
+                        <Stack spacing={1}>
+                            <Rating name="half-rating-read" defaultValue={value.rating.rate} precision={0.5} onClick={handleRating} readOnly/>
+                        </Stack>
                     </div>
                     <span class="bg-blue-100 text-blue-800 text-xs font-semibold px-2.5 py-0.5 rounded dark:bg-blue-200 dark:text-blue-800 ms-3">{value.rating.rate}</span>
                 </div>
-                <div class="flex items-center justify-between">
-                    <span class="text-3xl font-bold text-gray-900 dark:text-white">$599</span>
+                <div class="flex items-center justify-between space-x-1">
+                    <span class="text-3xl font-bold text-gray-900 dark:text-white">${value.rating.count}</span>
                     <a href="!#" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Add to cart</a>
                 </div>
             </div>
