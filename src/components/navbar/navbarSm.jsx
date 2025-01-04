@@ -23,7 +23,7 @@ const NavbarSm = () => {
     <div>
         <div className='lg:hidden block bg-blue-950 flex justify-center items-center h-[60px]'>
 
-          <div className='flex justify-between w-full px-20 items-center'>
+          <div className='flex justify-between w-full px-10 sm:px-20 items-center'>
             <a href="/" className='font-bold text-[24px] text-white cursor-default'>Virtual Shop</a>
             <button className={`p-[6px] text-[20px] text-white hover:text-blue-400 hover:bg-slate-800 transition outline rounded`} onClick={button}>
               {bars === false ? <FaBars/> : <RiCloseLargeLine />}  
