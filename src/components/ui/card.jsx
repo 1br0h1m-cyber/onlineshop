@@ -13,7 +13,7 @@ const Card = () => {
       setRating(rate)
     }
     
-  
+
   return (
 
     <div className='px-9 py-5 flex flex-col-2'>
@@ -23,9 +23,9 @@ const Card = () => {
         {Allproducts.length !== 0 ? Allproducts.map((value,index)=>(
 
         <div class="w-full max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
-            <a href="!#">
-                <img class="p-5 rounded-lg" src={Allproducts[0].image} alt="product-image" />
-            </a>
+            <div className='m-5 flex justify-center items-center w-auto h-[400px] bg-white'>
+                <img className='max-h-[400px]' src={Allproducts[index].image} alt="product-image" />
+            </div>
             <div class="px-5 pb-5">
                 <a href="!#">
                     <h5 class="text-xl font-semibold tracking-tight text-gray-900 dark:text-white">{value.title}</h5>
@@ -34,7 +34,7 @@ const Card = () => {
                     <div class="flex items-center space-x-1 rtl:space-x-reverse ">
                         {/* <Rating initialValue={value.rating.rate} readonly={true} onClick={handleRating}/> */}
                         <Stack spacing={1}>
-                            <Rating name="half-rating-read" defaultValue={value.rating.rate} precision={0.5} onClick={handleRating} readOnly/>
+                            <Rating name="half-rating-read" defaultValue={value.rating.rate} precision={0.1} onClick={handleRating} readOnly/>
                         </Stack>
                     </div>
                     <span class="bg-blue-100 text-blue-800 text-xs font-semibold px-2.5 py-0.5 rounded dark:bg-blue-200 dark:text-blue-800 ms-3">{value.rating.rate}</span>
