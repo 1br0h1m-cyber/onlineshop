@@ -16,6 +16,7 @@
     font-weight: bold;
 }
 
+
 @media (max-width:1000px) and (min-width:768px) {
     #footer {
         flex-direction: column;
@@ -69,6 +70,14 @@ SwiperSlide img {
 #contact {
     height: auto;
     background-image: url('./assets/contact-us.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#login-register {
+    height: auto;
+    background-image: url('./assets/login-register.jpg');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
