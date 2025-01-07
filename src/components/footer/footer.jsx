@@ -22,16 +22,16 @@ const Footer = () => {
                         <a className='hover:text-blue-500 transition' href="/">Home</a>
                       </li>
                       <li>
-                        <a className='hover:text-blue-500 transition' href="/products">Product</a>
-                      </li>
-                      <li>
                         <a className='hover:text-blue-500 transition' href="/about">About</a>
                       </li>
                       <li>
-                        <a className='hover:text-blue-500 transition' href="/contact">Contact</a>
+                        <a className='hover:text-blue-500 transition' href="/login">Log in</a>
                       </li>
                       <li>
-                        <a className='hover:text-blue-500 transition' href="/login">Login</a>
+                        <a className='hover:text-blue-500 transition' href="/register">Sign up</a>
+                      </li>
+                      <li>
+                        <a className='hover:text-blue-500 transition' href="https://policies.google.com/privacy">Privacy</a>
                       </li>
                   </ul>
 
