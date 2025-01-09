@@ -51,9 +51,9 @@ const About = () => {
         <div className='flex gap-9 my-3'>
           <button className='border-solid border-blue-200 border-[2px] text-blue-200 rounded-md h-10 px-2 font-medium text-[15px] sm:text-[20px] hover:text-blue-400 hover:border-blue-400 hover:bg-sky-900 transition'>Read More</button>
           <div className='flex gap-3'>
-            <button onClick={window.location.href = 'https://www.instagram.com/'} className='border-solid border-blue-200 border-[2px] text-blue-200 rounded-md h-10 w-10 flex justify-center items-center text-[25px] hover:text-blue-400 hover:border-blue-400 hover:bg-sky-900 transition'><FaInstagram/></button>
-            <button onClick={window.location.href = 'https://telegram.org'} className='border-solid border-blue-200 border-[2px] text-blue-200 rounded-md h-10 w-10 flex justify-center items-center text-[25px] hover:text-blue-400 hover:border-blue-400 hover:bg-sky-900 transition'><LiaTelegramPlane/></button>
-            <button onClick={window.location.href = 'https://x.com'} className='border-solid border-blue-200 border-[2px] text-blue-200 rounded-md h-10 w-10 flex justify-center items-center text-[25px] hover:text-blue-400 hover:border-blue-400 hover:bg-sky-900 transition'><FaXTwitter/></button>
+            <button onClick={() => window.location.href = 'https://www.instagram.com/'} className='border-solid border-blue-200 border-[2px] text-blue-200 rounded-md h-10 w-10 flex justify-center items-center text-[25px] hover:text-blue-400 hover:border-blue-400 hover:bg-sky-900 transition'><FaInstagram/></button>
+            <button onClick={() => window.location.href = 'https://telegram.org'} className='border-solid border-blue-200 border-[2px] text-blue-200 rounded-md h-10 w-10 flex justify-center items-center text-[25px] hover:text-blue-400 hover:border-blue-400 hover:bg-sky-900 transition'><LiaTelegramPlane/></button>
+            <button onClick={() => window.location.href = 'https://x.com'} className='border-solid border-blue-200 border-[2px] text-blue-200 rounded-md h-10 w-10 flex justify-center items-center text-[25px] hover:text-blue-400 hover:border-blue-400 hover:bg-sky-900 transition'><FaXTwitter/></button>
           </div>
         </div>
 
