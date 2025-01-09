@@ -10,7 +10,8 @@ module.exports = {
         lg: '4px 4px 8px rgba(0, 0, 0, 0.5)',
       },
       screens: {
-        xmd: '930px'
+        xmd: '930px',
+        xlg: '1150px'
       }
     },
   },

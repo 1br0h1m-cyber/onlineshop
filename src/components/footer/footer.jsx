@@ -16,12 +16,12 @@ const Footer = () => {
           <div class="w-full max-w-screen-xl mx-auto p-4 md:py-8">
             <div class="sm:flex sm:flex-col sm:items-center sm:justify-between md:flex-row md:justify-between" id='footerDiv'>
 
-              <a href="/" class="flex items-center mb-4 sm:mb-6 px-6 py-1 sm:p-0 md:mb-0 space-x-3 rtl:space-x-reverse">
+              <a href="/" class="flex items-center mb-4 sm:mb-6 sm:mr-5 md:mr-0 py-1 sm:p-0 md:mb-0 space-x-3 rtl:space-x-reverse">
                   <img src={logo} class="h-9 rounded-[50%]" alt="Flowbite Logo" />
                   <span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">Virtual Shop</span>
               </a>
 
-              <div className='grid grid-cols-2 px-6 space-x-[60px] md:space-x-[0px] md:gap-[0px] md:none justify-between' id='footer'>
+              <div className='grid grid-cols-2 px-5 space-x-[60px] sm:space-x-[200px] md:space-x-0 md:gap-[0px] md:none justify-between' id='footer'>
 
                 <ul class="flex flex-col md:flex-row items-start sm:items-start md:items-center font-medium text-gray-400 space-y-4 md:space-y-0 md:space-x-7 lg:space-x-8">
                   <li>

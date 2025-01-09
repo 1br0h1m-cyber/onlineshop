@@ -11,7 +11,7 @@ const NavbarLg = () => {
   const navigate = useNavigate()
 
   return (
-    <div className='lg:flex hidden bg-blue-950 flex justify-center items-center h-[60px]'>
+    <div className='lg:flex hidden bg-blue-950 flex justify-center items-center h-[60px] fixed w-full'>
       <div className='flex justify-between w-full px-20 items-center'>
         <a href="/" className='font-bold text-[24px] text-white cursor-default'>Virtual Shop</a>
         <div className='text-white space-x-5'>

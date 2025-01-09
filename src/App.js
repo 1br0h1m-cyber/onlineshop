@@ -22,6 +22,8 @@ function App(){
   return (
     <div>
       <Navbar/>
+
+      <div className='pt-12'>        
         <Routes>
           <Route path='/' element={<Home/>}/>
           <Route path='/about' element={<About/>}/>
@@ -33,6 +35,8 @@ function App(){
           <Route path='*' element={<div className='flex justify-center items-center h-screen'>
             <img src={PageNotFound} alt='error' className='h-[500px]'/></div>}/>
         </Routes>
+        </div>
+
       <Footer/>
     </div>
   );

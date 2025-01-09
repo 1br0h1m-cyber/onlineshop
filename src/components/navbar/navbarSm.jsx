@@ -16,16 +16,22 @@ const NavbarSm = () => {
     setBars(!bars);
   };
 
+  // const handleWheel = (event) => {
+  //   if (bars) {
+  //     setBars(false);
+  //   }
+  // };
+
   return (
     <div>
       {/* Navbar */}
-      <div className="lg:hidden block bg-blue-950 flex justify-center items-center h-[60px] sticky z-50 translate-y-0">
+      <div className="lg:hidden block bg-blue-950 flex justify-center items-center h-[60px] fixed z-50 top-0 left-0 right-0 translate-y-0">
         <div className="flex justify-between w-full px-10 sm:px-20 items-center">
           <a href="/" className="font-bold text-[24px] text-white cursor-default">
             Virtual Shop
           </a>
           <button
-            className={`p-[6px] text-[20px] text-white hover:text-blue-400 hover:bg-slate-800 transition outline rounded`}
+            className="p-[6px] text-[20px] text-white hover:text-blue-400 hover:bg-slate-800 transition outline rounded"
             onClick={toggleMenu}
           >
             {bars ? <RiCloseLargeLine /> : <FaBars />}
@@ -35,7 +41,7 @@ const NavbarSm = () => {
 
       {/* Navbar Menu */}
       <div
-        className={`md:flex justify-center md:gap-6 xmd:gap-9 bg-blue-950 w-full lg:hidden fixed top-[60px] left-0 right-0 ${
+        className={`lg:hidden md:flex justify-center md:gap-6 xmd:gap-9 bg-blue-950 w-full fixed left-0 right-0 top-[60px] ${
           bars ? 'translate-y-0' : '-translate-y-full'
         } border-t border-white z-40 transition-transform duration-300`}
       >
