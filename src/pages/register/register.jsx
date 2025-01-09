@@ -4,7 +4,7 @@ const Register = () => {
   return (
     <div className="flex items-center justify-center min-h-screen bg-sky-800" id='login-register'>
       <div className="w-[375px] sm:w-[500px] bg-[rgba(255,255,255,0.12)] backdrop-blur-sm rounded-lg shadow-md p-8">
-        <h2 className="text-[40px] font-bold text-center text-gray-800 mb-6 text-sky-200">Sign up</h2>
+        <h2 className="text-[40px] font-bold text-center mb-6 text-sky-200">Sign up</h2>
         <form>
 
           <div className="mb-4">

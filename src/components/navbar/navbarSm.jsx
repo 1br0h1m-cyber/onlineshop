@@ -25,7 +25,7 @@ const NavbarSm = () => {
   return (
     <div>
       {/* Navbar */}
-      <div className="lg:hidden block bg-blue-950 flex justify-center items-center h-[60px] fixed z-50 top-0 left-0 right-0 translate-y-0">
+      <div className="lg:hidden bg-blue-950 flex justify-center items-center h-[60px] fixed z-50 top-0 left-0 right-0 translate-y-0">
         <div className="flex justify-between w-full px-10 sm:px-20 items-center">
           <a href="/" className="font-bold text-[24px] text-white cursor-default">
             Virtual Shop
