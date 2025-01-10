@@ -22,6 +22,7 @@ import { LiaTelegramPlane } from 'react-icons/lia';
 
 
 const About = () => {
+
   return (
     <div className='lg:flex items-center justify-between px-8 gap-8 mt-1'>
 

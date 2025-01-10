@@ -36,7 +36,7 @@ const Card = () => {
                     <div class="flex items-center space-x-1 rtl:space-x-reverse ">
                         {/* <Rating initialValue={value.rating.rate} readonly={true} onClick={handleRating}/> */}
                         <Stack spacing={1}>
-                            <Rating name="half-rating-read" defaultValue={value.rating.rate} precision={0.1} onClick={handleRating} readOnly/>
+                            <Rating name="half-rating-read" defaultValue={value.rating.rate} precision={0.5} onClick={handleRating} readOnly/>
                         </Stack>
                     </div>
                     <span class="bg-blue-100 text-blue-800 text-xs font-semibold px-2.5 py-0.5 rounded dark:bg-blue-200 dark:text-blue-800 ms-3">{value.rating.rate}</span>
