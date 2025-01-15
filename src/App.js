@@ -3,7 +3,7 @@ import { Route, Routes } from 'react-router-dom';
 import './App.css';
 
 // images
-import PageNotFound from './assets/page-not-found.png'
+import PageNotFound from './assets/error-page.png'
 
 // navbar & footer
 import Navbar from './components/navbar/navbar';
@@ -33,7 +33,7 @@ function App(){
           <Route path='/register' element={<Register/>}/>
           <Route path='/cart' element={<Cart/>}/>
           <Route path='*' element={<div className='flex justify-center items-center h-screen'>
-            <img src={PageNotFound} alt='error' className='h-[500px]'/></div>}/>
+            <img src={PageNotFound} alt='error' className='h-[500px] rounded-3xl'/></div>}/>
         </Routes>
         </div>
 

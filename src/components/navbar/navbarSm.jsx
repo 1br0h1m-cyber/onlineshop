@@ -43,7 +43,7 @@ const NavbarSm = () => {
       <div
         className={`lg:hidden md:flex justify-center md:gap-6 xmd:gap-9 bg-blue-950 w-full fixed left-0 right-0 top-[60px] ${
           bars ? 'translate-y-0' : '-translate-y-full'
-        } border-t border-white z-40 transition-transform duration-300`}
+        } border-y border-white z-40 transition-transform duration-300`}
       >
         <div className="text-white text-center space-x-[35px] sm:space-x-[50px] md:space-x-[25px] xmd:space-x-[35px] pt-3 lg:hidden">
           <a className="hover:text-blue-500 transition" href="/">

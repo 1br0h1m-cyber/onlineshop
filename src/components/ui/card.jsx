@@ -1,14 +1,12 @@
 import React, { useState } from 'react'
-import Allproducts from '../../data/productData';
 
 // rating
 import Rating from '@mui/material/Rating';
 import Stack from '@mui/material/Stack';
 
-const Card = () => {
+const Card = ({data}) => {
     const [rating, setRating] = useState(0)
     console.log(rating);
-    
 
     // Catch Rating value
     const handleRating = (rate) => {
@@ -22,11 +20,11 @@ const Card = () => {
 
         <div className="px-5 sm:px-9 py-5 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xlg:grid-cols-4 gap-6">
         
-        {Allproducts.length !== 0 ? Allproducts.map((value,index)=>(
+        {data.length !== 0 ? data.map((value,index)=>(
 
         <div class="w-full max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
             <div className='m-5 flex justify-center items-center w-auto h-[250px] sm:h-[300px] md:h-[300px] lg:h-[400px] bg-white'>
-                <img className='max-h-[250px] sm:max-h-[300px] md:max-h-[300px] lg:max-h-[400px]' src={Allproducts[index].image} alt="product-image" />
+                <img className='max-h-[250px] sm:max-h-[300px] md:max-h-[300px] lg:max-h-[400px]' src={data[index].image} alt="product-image" />
             </div>
             <div class="px-5 pb-5">
                 <a href="!#">

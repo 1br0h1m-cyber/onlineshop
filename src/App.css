@@ -2,14 +2,6 @@
     background-color: rgb(7 89 133);
 }
 
-.home {
-    height: 105vh;
-    background-image: url('./assets/bg-image.png');
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
 .loading {
     color: white;
     font-size: x-large;
@@ -48,6 +40,14 @@ SwiperSlide img {
     height: 100%;
 }
 
+#home {
+    height: 105vh;
+    background-image: url('./assets/bg-image.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
 #contact {
     height: auto;
     background-image: url('./assets/contact-us.jpg');
@@ -63,7 +63,6 @@ SwiperSlide img {
     background-repeat: no-repeat;
     background-size: cover;
 }
-
 
 /* medias */
 
